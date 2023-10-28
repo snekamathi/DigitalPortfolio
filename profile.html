@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img>
+            <h1>Sneka Mathi</h1>
+            <p>Welcome to My Digital Portfolio</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p>Hello Everyone! This is Sneka and i am a Computer Science Student.</p>
+            </div>
+        </section>
+    
+        <section id="education">
+            <div class="section-content">
+                <h2>Education</h2>
+                <p>B.Sc (Computer Science)</p>
+                <p>Government Arts and Science College,Aranthangi</p>
+            </div>
+        </section>
+    
+        <section id="skills">
+            <div class="section-content">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section id="projects">
+            <div class="section-content">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href="#">Project1</a></li>
+                    <li><a href="#">Project2</a></li>
+                </ul>
+    
+            </div>
+        </section>
+    
+        <section id="resume">
+            <center>
+                <div class="section-content">
+                    <h2>Resume</h2>
+                    <a href="#" download="Screenshot.png"><button type="button">Download Resume</button></a>
+                    <!-- resume link -->
+                    <!-- <input type="file"> -->
+                </div>
+            </center>
+        </section>    
+
+    </main>
+
+
+    <footer>
+        <p>CopyRight &copy; 2023 All Right Reserved</p>
+    </footer>
+
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                console.log(targetElement)
+                if(targetElement){
+                    // alert(1)
+                    window.scrollTo({
+                        top:targetElement.offsetTop,
+                        behavior:'smooth'
+                    })
+                }
+            })
+        })    
+
+
+        
+
+
+
+    </script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

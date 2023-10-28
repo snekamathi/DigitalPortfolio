@@ -2,7 +2,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 2.7rem;
     /* background-color: #f0f0f0; */
 }
 
@@ -15,7 +14,7 @@ header {
 }
 
 .header-content h1 {
-    /* font-size: 2.5rem; */
+     font-size: 2.5rem; 
 }
 
 .profile-picture {
